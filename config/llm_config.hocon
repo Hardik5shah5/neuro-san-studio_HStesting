@@ -17,3 +17,10 @@
 # By default, use the developer llm_config
 # Worth noting that includes using env var substitution is expressly forbidden by HOCON readers.
 include "developer_llm_config.hocon"
+
+{
+    "llm_config": {
+        "class": "gemini",
+        "model_name": "gemini-3.6-flash"
+    }
+}
