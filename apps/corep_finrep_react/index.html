@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COREP / FINREP Output</title>
+    <style>
+      html, body, #root { margin: 0; min-height: 100%; background: #0b1220; }
+      body { font-family: Inter, Arial, sans-serif; }
+      @media print {
+        body, html, #root { background: #ffffff !important; color: #111827 !important; }
+        button { display: none !important; }
+        section, article, div { break-inside: avoid; }
+        section, article, div { background: #ffffff !important; border-color: #cbd5e1 !important; }
+        h1, h2, h3, p, li, strong, span, pre { color: #111827 !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
